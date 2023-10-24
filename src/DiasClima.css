@@ -1,0 +1,415 @@
+
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: #100E1D;
+    width: 70%;
+    min-width: 580px;
+    height: fit-content;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+  .secondHeader{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1.5rem;
+    height: 5rem;
+    width: 100%;
+    max-width: 42rem;
+  }
+  
+
+.celsiusBoton{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-right: 0.25rem;
+    padding-top: 0.25rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #110E3C;
+    background-color: #E7E7EB;
+    border-radius: 50%;
+}
+
+.farBoton{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-right: 0.25rem;
+    padding-top: 0.25rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #E7E7EB;
+    background-color: #585676;
+    border-radius: 50%;
+}
+
+.sectionDays{
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: max-content;
+    margin: 0 auto;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    ul {
+      max-width: 42rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: max-content;
+    }
+  }
+
+.diasClima{
+    width: 7.5rem;
+    height: auto;
+    background-color: #1E213A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #E7E7EB;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.dateClima{
+    margin-bottom: 0.5rem;
+}
+
+.spanClima{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 4rem;
+}
+
+.diasClima .spanClima img{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    color: transparent;
+}
+
+.diasTemps{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.diasClima div p{
+    margin: 0;
+}
+
+.diasClima div p:first-child{
+    font-weight: bold;
+}
+
+.diasClima div p:last-child{
+    color: #A09FB1;
+}
+
+.containerToday{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-top: 3rem;
+}
+
+.titleToday{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.25rem;
+    color: #E7E7EB;
+
+    @media (min-width: 768px) {
+        width: 100%;
+        max-width: 42rem; 
+        text-align: left; 
+      }
+}
+
+.thirdContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        display: grid; 
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+        gap: 1.25rem; 
+        max-width: 42rem; 
+      }
+}
+
+.windStatus{
+    display: flex;
+    height: 12rem;
+    width: 100%;
+    max-width: 328px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E213A;
+}
+
+.windTitle{
+    font-weight: inherit;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #E7E7EB;
+}
+
+.msStatus{
+    display: flex;
+    align-items: flex-end;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.dataNumbers{
+    margin: 0;
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #E7E7EB;
+}
+
+.humidityNumbers{
+    margin: 0;
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #E7E7EB;   
+}
+
+.valuesOperators{
+    color: #E7E7EB;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.25rem;
+}
+
+.navigationContainer{
+    display: flex;
+    align-items: center;
+    color: #E7E7EB;
+    font-size: 1rem;
+}
+
+.navigationSpan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.75rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+.navigationIcon{
+    color: transparent;
+    transform: rotate(143deg);
+    width: 100%;
+    height: 100%;
+}
+
+.humidityContainer{
+    display: flex;
+    height: 12rem;
+    width: 100%;
+    max-width: 328px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E213A;
+}
+
+.humidityTitle{
+    font-weight: inherit;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #E7E7EB;
+}
+
+.percentageContainer{
+    display: flex;
+    align-items: flex-end;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.percentage{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color:#E7E7EB;
+}
+
+.barritaPercentage{
+    display: flex;
+    height: .5rem;
+    width: 70%;
+    align-items: center;
+    border-radius: 1.5rem;
+    background-color: #E7E7EB;
+}
+
+.innerPercentage{
+    margin: 0;
+    height: .5rem;
+    border-radius: 1.5rem;
+    background-color: #E7E7EB;
+    padding: 0;
+    width: 76%;
+}
+
+.percentageSigno{
+    width: 70%;
+    text-align: right;
+    font-weight: 700;
+    color: rgb(160 159 177)
+}
+
+.visibilityContainer{
+    display: flex;
+    width: 100%;
+    max-width: 328px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #1E213A;
+}
+
+.visibilityTitle{
+    font-weight: inherit;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #E7E7EB;
+}
+
+.visibilitySpeed{
+    margin-bottom: 1rem;
+    display: flex;
+    height: 5rem;
+    align-items: flex-end;
+}
+
+.visiNumbers{
+    margin: 0;
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #E7E7EB
+}
+
+.kmNumbers{
+    font-weight: inherit;
+    margin: 0;
+    margin-bottom: .5rem;
+    margin-left: .25rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #E7E7EB
+}
+
+.pressureContainer{
+    display: flex;
+    width: 100%;
+    max-width: 328px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #1E213A;
+}
+
+.pressureTitle{
+    font-weight: inherit;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #E7E7EB;   
+}
+
+.pressureValues{
+    margin-bottom: 1rem;
+    display: flex;
+    height: 5rem;
+    align-items: flex-end;
+}
+
+.pressureNumbers{
+    margin: 0;
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #E7E7EB
+}
+
+.pressureMb{
+    font-weight: inherit;
+    margin: 0;
+    margin-bottom: .5rem;
+    margin-left: .25rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #E7E7EB
+}
+
+.footerContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color:rgb(160 159 177)
+}
+
+.footerText{
+    margin: 0;
+    text-align: center;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}

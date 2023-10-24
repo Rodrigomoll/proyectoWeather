@@ -1,0 +1,253 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.contenedorMain{
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-color: rgba(30, 33, 58, 1);
+  flex-direction: row;
+  overflow: hidden;
+}
+.contenedorPapa{
+  background-color: #1E213A;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+    @media (min-width: 768px) {
+      .contenedorPapa {
+        width: 30%;
+        min-width: 380px;
+        margin: auto;
+      }
+  }
+}
+
+
+.climaContenedor{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(30, 33, 58, 1);
+  width: 30%;
+  min-width: 380px;
+}
+
+.climaHeader{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 4rem;
+}
+
+.climaBoton{
+  width: 11rem;
+  height: 2.25rem;
+  background-color: #6E707A;
+  color: #E7E7EB;
+  cursor: pointer;
+  text-align: center;
+}
+
+.climaIcono{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 100%;
+}
+
+.climaIcono > img{
+  width: 40px;
+  height: 35px;
+  color: transparent;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.imagenContenedor{
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 45%;
+  background-image: url('./assets/Cloud-background.png');
+  opacity: 0.1;
+  position: relative;
+}
+
+.contenedorIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  position: absolute;
+}
+
+.weatherPicture{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  color: transparent;
+  display: block;
+}
+
+.gradosContendor{
+  align-items: center;
+  display: flex;
+}
+
+.numeroGrados{
+  font-weight: 500;
+  font-size: 6rem;
+  color: #E7E7EB;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grados{
+  font-weight: 500;
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #A09FB1;
+}
+
+.clima{
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  font-size: 3x1;
+  font-weight: 600;
+  color: #A09FB1;
+}
+
+.climaDescription{
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #88869D;
+  margin-bottom: 6rem;
+}
+
+pre{
+  display: flex;
+  align-items: center;
+  gap: 2;
+  font-size: 1rem;
+  color: #88869D;
+  height: 2.5rem;
+  bottom: 0;
+}
+
+.iconoFlecha{
+  margin-bottom: 0.5rem;
+  width: 20px;
+  height: 20px;
+  color: transparent; 
+}
+
+.sectionBuscar{
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1E213A;
+}
+
+.sectionNav{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.absoluteSection{
+  position: absolute;
+  right: 2.5rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+.absoluteSection > img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  color: transparent;
+  width: 3%;
+  height: 100%;
+}
+
+.buscadorCiudad{
+  display: flex;
+  align-items: center;
+  width: 55%;
+  max-width: 268px;
+  height: 9px;
+  background-color: transparent;
+  border: 1px solid #E7E7EB;
+  font-weight: 500;
+  font-size: 16px;
+  color: #616475;
+}
+
+.buscadorCiudad > img{
+  width: 24px;
+  height: 24px;
+  display: inline;
+  margin-left: 2px;
+  color: transparent;
+}
+
+.inputCiudad{
+  background: transparent;
+  outline: none;
+  width: 233px;
+  height: 2rem;
+  padding-right: 1px;
+}
+
+.botonBuscador{
+  width: 20px;
+  height: 9px;
+  background-color: #3C47E9;
+  padding: 1px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #E7E7EB
+
+}
+
+.botonBuscador:hover{
+  color: #def341;
+}
+
+.ultimoEle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 80px;
+  padding-bottom: 5px;
+}
