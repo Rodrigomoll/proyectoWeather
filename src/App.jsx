@@ -77,7 +77,8 @@ function App() {
             <div className="contenedor">
               <div className="imagenContenedor">
                 <div className="contenedorIcon">
-                  <img className="weatherPicture" src={`/assets/${currentWeather?.icon}.png`} alt="imagen1" id=""/>
+                  <img className="weatherPicture" src={`/assets/${currentWeather?.icon}.png`}/>
+                  //porque no me muestra mi icono :c!!
                 </div>
               </div>
               <div className="gradosContendor">
